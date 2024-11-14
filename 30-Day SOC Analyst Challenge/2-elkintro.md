@@ -28,7 +28,7 @@ Another way to collect telemetry is through Elastic Agents. Rather than multiple
 
 After configuring Logstash, our Windows machines would then be able to send telemetry using either a Winlog Beat or an Elastic Agent.
 
-Logstash has the capability to filter logs that meet certain criteria. For example, if we have a specific event ID we're looking for, we can **only** send those through to Elasticsearch, reducing costs of ingestion and allowing us to ingest only the stuff we want, like source IP (srcip) and signature.
+Logstash can filter logs that meet certain criteria. For example, if we have a specific event ID we're looking for, we can **only** send those through to Elasticsearch, reducing costs of ingestion and allowing us to ingest only the stuff we want, like source IP (srcip) and signature.
 
 Logstash can also parse data, which means it can map a keyword within a log which will act as a field value to a field name.
 
