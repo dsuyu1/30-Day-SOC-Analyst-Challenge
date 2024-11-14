@@ -37,6 +37,30 @@ Kibana gives us the luxury to query for our logs stored within our Elasticsearch
 
 ### ELK Similarities to Splunk
 **Elasticsearch** acts as our Indexer/Search Head.
+
 **Logstash** is our Heavy Forwarder.
+
 **Kibana** is our Web GUI.
+
 **Beats/Agents** are our Universal Forwarders.
+
+## Benefits of Using ELK
+### 1. Centralized Logging
+- Allow us to meet compliance requirements and sift through data if a security incident occurs
+
+### 2. Flexbility
+- We can customize our ingestion whether we use Beats or Elastic Agents. We have the ability to be flexible with what telemetry enters our Elasticsearch instance using Logstash.
+
+### 3. Visualizations
+- We can create visualizations that let us observe important information at-a-glace.
+
+### 4. Scalability
+- ELK is easyy to congire to handle larger environemtns
+
+### 5. Ecosystem
+- If we can't find exactly what we're looking for, there are many integrations and a rich community.
+
+Many of the SIEMs out there are built on the ELK stack. The more comfortable I am using ELK, the better I'll transition into using the other SIEMs.
+
+
+
