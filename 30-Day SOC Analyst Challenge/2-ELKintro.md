@@ -3,9 +3,9 @@
 Elasticsearch, Logstash, and Kibana comprise the ELK stack.
 
 ## Elasticsearch
-**Elasticsearch** is a database used to store logs, such as Wubdiws event logs, system logs, and firewall logs. It gives us the ability to effectively search across all our data. 
+**Elasticsearch** is a database used to store logs, such as Windows event logs, system logs, and firewall logs. It gives us the ability to effectively search across all our data. 
 
-Elasticsearch uses a query languaged called ESQL, Elastic Search Query Langauge. It's beginner-friendly and easy-to-use.
+Elasticsearch uses a query language called ESQL, Elastic Search Query Language. It's beginner-friendly and easy to use.
 
 Elasticsearch also uses RESTful APIs and json, which means that we can use various applications to iteract with our Elasticsearch database in a programmable way to retrieve information.
 
@@ -14,7 +14,7 @@ Elasticsearch also uses RESTful APIs and json, which means that we can use vario
 
 When it comes to collecting telemetry, there are two popular ways to do it: **Beats** and **Elastic Agents**.
 
-There are **six** differnet types of Beats:
+There are **six** different types of Beats:
 
 - **File** Beats: logs
 - **Metric** Beats: metrics
@@ -28,7 +28,7 @@ Another way to collect telemetry is through Elastic Agents. Rather than multiple
 
 After configuring Logstash, our Windows machines would then be able to send telemetry using either a Winlog Beat or an Elastic Agent.
 
-Logstash has the capability to filter logs that meet a certain criteria. For example, if we have a specific event ID we're looking for, we can **only** send those through to Elasticsearch, reducing costs of ingestion and allowing us to ingest only the stuff we want, like source IP (srcip) and signature.
+Logstash has the capability to filter logs that meet certain criteria. For example, if we have a specific event ID we're looking for, we can **only** send those through to Elasticsearch, reducing costs of ingestion and allowing us to ingest only the stuff we want, like source IP (srcip) and signature.
 
 Logstash can also parse data, which means it can map a keyword within a log which will act as a field value to a field name.
 
@@ -48,14 +48,14 @@ Kibana gives us the luxury to query for our logs stored within our Elasticsearch
 ### 1. Centralized Logging
 - Allow us to meet compliance requirements and sift through data if a security incident occurs
 
-### 2. Flexbility
-- We can customize our ingestion whether we use Beats or Elastic Agents. We have the ability to be flexible with what telemetry enters our Elasticsearch instance using Logstash.
+### 2. Flexibility
+- We can customize our ingestion whether we use Beats or Elastic Agents. We can be flexible with what telemetry enters our Elasticsearch instance using Logstash.
 
 ### 3. Visualizations
-- We can create visualizations that let us observe important information at-a-glace.
+- We can create visualizations that let us observe important information at a glance.
 
 ### 4. Scalability
-- ELK is easyy to congire to handle larger environemtns
+- ELK is easy to configure to handle larger environments
 
 ### 5. Ecosystem
 - If we can't find exactly what we're looking for, there are many integrations and a rich community.
