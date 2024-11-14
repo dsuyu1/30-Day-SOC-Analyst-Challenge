@@ -22,3 +22,6 @@ There are **six** differnet types of Beats:
 - **Winlog** Beats: Windows events
 - **Audit** Beats: audit data
 - **Heartbeats**: uptime
+Depending on the telemetry we want to connect, we would install the appropriate Beat.
+
+Another way to collect telemetry is through Elastic Agents. Rather than multiple Beats, we can use one unified Agent. This is what we will be using for the 30-day challenge.
