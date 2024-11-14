@@ -1,3 +1,5 @@
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*vZDu4Bwj2GxQh8t1IjDq4w.png" width = "450">
+
 # Day 2: Introduction to the ELK Stack
 ## Introduction
 Elasticsearch, Logstash, and Kibana comprise the ELK stack.
