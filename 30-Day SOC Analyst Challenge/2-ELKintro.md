@@ -2,14 +2,14 @@
 ## Introduction
 Elasticsearch, Logstash, and Kibana comprise the ELK stack.
 
-### Elasticsearch
+## Elasticsearch
 **Elasticsearch** is a database used to store logs, such as Wubdiws event logs, system logs, and firewall logs. It gives us the ability to effectively search across all our data. 
 
 Elasticsearch uses a query languaged called ESQL, Elastic Search Query Langauge. It's beginner-friendly and easy-to-use.
 
 Elasticsearch also uses RESTful APIs and json, which means that we can use various applications to iteract with our Elasticsearch database in a programmable way to retrieve information.
 
-### Logstash
+## Logstash
 **Logstash** is a data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to our favorite "stash." In other words, it can filter it into our Elasticsearch instance. 
 
 When it comes to collecting telemetry, there are two popular ways to do it: **Beats** and **Elastic Agents**.
@@ -25,3 +25,18 @@ There are **six** differnet types of Beats:
 Depending on the telemetry we want to connect, we would install the appropriate Beat.
 
 Another way to collect telemetry is through Elastic Agents. Rather than multiple Beats, we can use one unified Agent. This is what we will be using for the 30-day challenge.
+
+After configuring Logstash, our Windows machines would then be able to send telemetry using either a Winlog Beat or an Elastic Agent.
+
+Logstash has the capability to filter logs that meet a certain criteria. For example, if we have a specific event ID we're looking for, we can **only** send those through to Elasticsearch, reducing costs of ingestion and allowing us to ingest only the stuff we want, like source IP (srcip) and signature.
+
+Logstash can also parse data, which means it can map a keyword within a log which will act as a field value to a field name.
+
+## Kibana
+Kibana gives us the luxury to query for our logs stored within our Elasticsearch instance. Kibana has lots of features, including Kibana Lens. Kibana Lens gives us visualization capabilities where we can drag and drop elements to build our dashboards.
+
+### ELK Similarities to Splunk
+**Elasticsearch** acts as our Indexer/Search Head.
+**Logstash** is our Heavy Forwarder.
+**Kibana** is our Web GUI.
+**Beats/Agents** are our Universal Forwarders.
