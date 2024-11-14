@@ -1,4 +1,5 @@
-<img src="https://miro.medium.com/v2/resize:fit:1400/1*vZDu4Bwj2GxQh8t1IjDq4w.png" width = "450">
+<p align="center"><img src="https://miro.medium.com/v2/resize:fit:1400/1*vZDu4Bwj2GxQh8t1IjDq4w.png" width = "450"></p>
+<br>
 
 # Day 2: Introduction to the ELK Stack
 ## Introduction
@@ -63,6 +64,8 @@ Kibana gives us the luxury to query for our logs stored within our Elasticsearch
 - If we can't find exactly what we're looking for, there are many integrations and a rich community.
 
 Many of the SIEMs out there are built on the ELK stack. The more comfortable I am using ELK, the better I'll transition into using the other SIEMs.
+
+<p align="center"><img src="https://cdn.prod.website-files.com/5c9200c49b1194323aff7304/64ba617a4ea0e4d87b39d940_ywFV4_1RzTtDG5FTJ1-4QLGkQ8ejHe8OTRnYCuFxSdunYy6FvuDbPCps5YJI_0vDb59x4_oA0gMV9OcGmQD4fgPnp-HqYyqxzrR72cSjbVsvw_odMprG8bPOS1RKpqT2HEQXFfXl4NShdzQGoxh-U4Y.jpeg" width = "750"></p>
 
 
 
