@@ -10,7 +10,7 @@ Elasticsearch, Logstash, and Kibana comprise the ELK stack.
 
 Elasticsearch uses a query language called ESQL, Elastic Search Query Language. It's beginner-friendly and easy to use.
 
-Elasticsearch also uses RESTful APIs and json, which means that we can use various applications to iteract with our Elasticsearch database in a programmable way to retrieve information.
+Elasticsearch also uses RESTful APIs and JSON, which means that we can use various applications to interact with our Elasticsearch database in a programmable way to retrieve information.
 
 ## Logstash
 **Logstash** is a data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to our favorite "stash." In other words, it can filter it into our Elasticsearch instance. 
