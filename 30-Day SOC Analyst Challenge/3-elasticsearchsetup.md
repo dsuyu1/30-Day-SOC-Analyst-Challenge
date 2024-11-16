@@ -11,3 +11,7 @@ Now, let's make a virtual machine for Elasticsearch.
 <p align="center"><img src="https://i.imgur.com/lBjU4sT.png"></p>
 <p align="center"><i>Ref 2: Selecting an image for our Elasticsearch virtual machine.</i></p>
 <br><br>
+
+<p align="center"><img src="https://i.imgur.com/85BFA2m.png"></p>
+<p align="center"><i>Ref 3: Our server has finished setting up; it is prompting me to log in.</i></p>
+<br><br>
