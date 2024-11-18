@@ -1,5 +1,5 @@
 # Day 3: Elasticsearch Setup
-## Introduction
+## Steps
 Today, I'll be setting up Elasticsearch using Vultr as my virtual machine/server provider. To start, let's set up our VPC 2.0 Network. To do this in Vultr, it's as easy as navigating to `Network` and selecting `VPC 2.0`. 
 
 <p align="center"><img src="https://i.imgur.com/Q5PGjfC.png"></p>
