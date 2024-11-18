@@ -31,4 +31,4 @@ Once we have our `elasticsearch.yml` file configured, we can finally start the s
 <br>
 
 ## Summary
-Today I successfully created my server and installed Elasticsearch. In Day 4, we will be installing Kibana! 🚀
+Today I successfully created my server and installed Elasticsearch. On Day 4, we will be installing Kibana! 🚀
