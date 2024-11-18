@@ -23,3 +23,12 @@ After, I navigated to `/etc/elasticsearch/` to find the `elasticsearch.yml` file
 <p align="center"><img src="https://i.imgur.com/oLGFbRp.png"></p>
 <p align="center"><i>Ref 4: Configuring the elasticsearch.yml file.</i></p>
 <br>
+
+Once we have our `elasticsearch.yml` file configured, we can finally start the service
+
+<p align="center"><img src="https://i.imgur.com/M2ACkCn.png"></p>
+<p align="center"><i>Ref 5: The ElasticSearch service has been started.</i></p>
+<br>
+
+## Summary
+Today I successfully created my server and installed Elasticsearch. In Day 4, we will be installing Kibana! 🚀
