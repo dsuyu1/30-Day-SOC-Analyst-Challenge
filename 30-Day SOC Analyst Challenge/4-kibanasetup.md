@@ -1,0 +1,2 @@
+# Day 4: Setting up Kibana
+## Introduction
