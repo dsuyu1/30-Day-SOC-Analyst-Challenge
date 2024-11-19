@@ -14,4 +14,10 @@ As always, however, the simplest fix was the correct one. My IP address had chan
 
 I also made some changes to Elastic (i.e. configured dark mode so it looks cooler).
 
+Anyways, troubleshooting done with, it's time to start making our Fleet. To begin, now within the web GUI, we navigate under Management and select Fleet.
 
+<p align="center"><img src="https://i.imgur.com/L6hdMmU.png">
+<i>Ref 2: Creating a Fleet within Elastic</i></p>
+<br>
+
+We're prompted for a Fleet name and URL. The URL will be our public IP address.
