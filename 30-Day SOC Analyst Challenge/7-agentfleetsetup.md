@@ -66,3 +66,6 @@ If we navigate to Discover in our Elastic web GUI, we can see that we're already
 <p align="center"><img src="https://i.imgur.com/JAzMoKw.png"></p>
 <p align="center"><i>Ref 8: Ingested logs from our Elastic Agent.</i></p>
 <br>
+
+## Summary
+In this section, I created a new Fleet server to host my Fleet. I installed an Elastic Agent onto my Windows 2022 server to capture events and log data. There were lots of issues, but eventually, I overcame and triumphed! I learned a lot in this section, and on Day 8, I will be learning about Sysmon! See you there! 👋
