@@ -35,3 +35,14 @@ This policy is for a Windows machine so we'll select Windows when it asks us to 
 <p align="center"><img src="https://i.imgur.com/eLVQIKY.png"></p>
 <p align="center"><i>Ref 4: Installing the Elastic Agent on our host (Windows Server 2022).</i></p>
 <br>
+
+Let's go to our Windows server to install the Elastic Agent. After running the command we were provided, we get an error. Among the error is this line:
+`fail to execure request to fleet-server: dial tcp 149.28.246.152:443`. It looks like something is preventing the connection between our Fleet server and Elasticsearch. 
+
+Looking at the documentation from Elastic, the default port from our Elastic Agent towards our Fleet Server is `8220`. While we don't have a firewall on Vultr for our Fleet server, we do have to configure the firewall on the virtual machine itself.
+
+<p align="center"><img src="https://i.imgur.com/w4HYtve.png"></p>
+<p align="center"><i>Ref 5: Configuring the firewall for our Fleet server.</i></p>
+<br>
+
+
