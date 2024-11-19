@@ -1,4 +1,4 @@
-# Day 7: Elastic Agent and Fleet Server Setup
+![image](https://github.com/user-attachments/assets/a81d43b5-aa48-4de4-aef7-61706e52d7ff)# Day 7: Elastic Agent and Fleet Server Setup
 ## Steps
 The objective for today is to install an Elastic Agent on the Windows server and enroll the Windows server into a Fleet.
 
@@ -22,6 +22,10 @@ Anyways, troubleshooting done with, it's time to start making our Fleet. To begi
 
 We're prompted for a Fleet name and URL. The URL will be our public IP address. After, we're asked to install the fleet server on a centralized host, aka, the Ubuntu server we just spun up specifically for the Fleet. We'll be connecting using PuTTY like last time.
 
-After running the command, the connection between the Fleet server and our centralized host could not be established. This is because our Elastic server (called `elk` wasn't allowing connections from the Fleet server's public IP. This was causing the connection to never be established. In other words, the Fleet server has to be able to access Elasticsearch. I didn't mention it, but previously, I configured the ELK server's firewall to allow connections on port 9200, the port Elasticsearch listens on by default.
+After running the command, the connection between the Fleet server and our centralized host could not be established. This is because our Elastic server (called `elk` wasn't allowing connections from the Fleet server's public IP. This was causing the connection to never be established. In other words, the Fleet server has to be able to access Elasticsearch. I didn't mention it, but previously, I configured the ELK server's firewall to allow connections on port 9200, the port Elasticsearch listens on by default. I had to configure both the Vultr firewall and the ELK server's firewall for this connection to be established.
 
+Now, our Fleet server is connected and we can continue enrolling our Elastic Agent.
 
+<p align="center"><img src="https://i.imgur.com/nUuMmKy.png">
+<i>Ref 3: Adding an agent and creating an agent policy.</i></p>
+<br>
