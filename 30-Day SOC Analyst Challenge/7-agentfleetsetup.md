@@ -16,8 +16,8 @@ I also made some changes to Elastic (i.e. configured dark mode so it looks coole
 
 Anyways, troubleshooting done with, it's time to start making our Fleet. To begin, now within the web GUI, we navigate under Management and select Fleet.
 
-<p align="center"><img src="https://i.imgur.com/L6hdMmU.png">
-<i>Ref 2: Creating a Fleet within Elastic</i></p>
+<p align="center"><img src="https://i.imgur.com/L6hdMmU.png"></p>
+<p align="center"><i>Ref 2: Creating a Fleet within Elastic</i></p>
 <br>
 
 We're prompted for a Fleet name and URL. The URL will be our public IP address. After, we're asked to install the fleet server on a centralized host, aka, the Ubuntu server we just spun up specifically for the Fleet. We'll be connecting using PuTTY like last time.
@@ -26,12 +26,12 @@ After running the command, the connection between the Fleet server and our centr
 
 Now, our Fleet server is connected and we can continue enrolling our Elastic Agent.
 
-<p align="center"><img src="https://i.imgur.com/nUuMmKy.png">
-<i>Ref 3: Adding an agent and creating an agent policy.</i></p>
+<p align="center"><img src="https://i.imgur.com/nUuMmKy.png"></p>
+<p align="center"><i>Ref 3: Adding an agent and creating an agent policy.</i></p>
 <br>
 
 This policy is for a Windows machine so we'll select Windows when it asks us to select the appropriate platform.
 
-<p align="center"><img src="https://i.imgur.com/eLVQIKY.png">
-<i>Ref 4: Installing the Elastic Agent on our host (Windows Server 2022).</i></p>
+<p align="center"><img src="https://i.imgur.com/eLVQIKY.png"></p>
+<p align="center"><i>Ref 4: Installing the Elastic Agent on our host (Windows Server 2022).</i></p>
 <br>
