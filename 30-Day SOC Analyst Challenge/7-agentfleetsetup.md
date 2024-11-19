@@ -45,4 +45,5 @@ Looking at the documentation from Elastic, the default port from our Elastic Age
 <p align="center"><i>Ref 5: Configuring the firewall for our Fleet server.</i></p>
 <br>
 
+Even after allowing connections on port `8220`, we're still getting an error. Let's try allowing connections on port `443` since that's where our Elastic Agent is trying to connect to.
 
