@@ -47,3 +47,9 @@ Looking at the documentation from Elastic, the default port from our Elastic Age
 
 Even after allowing connections on port `8220`, we're still getting an error. Let's try allowing connections on port `443` since that's where our Elastic Agent is trying to connect to.
 
+Nope, even then, it still isn't working. Let's try going into Elastic under Fleet and head to Settings. Here, we can see that the URL is indeed using port `443`. By default, the port for connections between our Elastic Agent and Fleet Server is `8220`. Let's change that!
+
+<p align="center"><img src="https://i.imgur.com/VpBYU2J.png"></p>
+<p align="center"><i>Ref 6: Editing our Fleet server URL to use port 8220.</i></p>
+<br>
+
