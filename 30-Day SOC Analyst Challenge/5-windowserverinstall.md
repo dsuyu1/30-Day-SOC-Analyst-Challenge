@@ -4,3 +4,6 @@ The objective of this section is to have a Windows Server with RDP exposed to th
 
 I'm going to call it **windows2022**.
 
+<p align="center"><img src="https://i.imgur.com/NQyfpYA.png">
+<i>Ref 1: Our servers so far.</i></p>
+<br>
