@@ -61,3 +61,8 @@ With this change, the installation is finally complete!
 <p align="center"><i>Ref 7: We can see our Windows server as an Agent. This means we were successful!</i></p>
 <br>
 
+If we navigate to Discover in our Elastic web GUI, we can see that we're already ingesting logs. I had to configure my ELK server's firewall so that it allowed TCP connections between it and the Windows 2022 server. This sounds like a liability since now there's a vector of attack between my ELK server and (soon-to-be-compromised) Windows server. For now, however, since this is a lab environment and not production, I won't worry too much about it.
+
+<p align="center"><img src="https://i.imgur.com/JAzMoKw.png"></p>
+<p align="center"><i>Ref 8: Ingested logs from our Elastic Agent.</i></p>
+<br>
