@@ -53,3 +53,11 @@ Nope, even then, it still isn't working. Let's try going into Elastic under Flee
 <p align="center"><i>Ref 6: Editing our Fleet server URL to use port 8220.</i></p>
 <br>
 
+After these changes, we still get an error. However, it's a different error this time, which is a step in the right direction. Now, we have a `certificate signed by unknown authority`. This is because we did use a self-signed certificate. To bypass this we need to use the `--insecure` flag at the end of the installation command.
+
+With this change, the installation is finally complete!
+
+<p align="center"><img src="https://i.imgur.com/p3Tlm8Y.png"></p>
+<p align="center"><i>Ref 7: We can see our Windows server as an Agent. This means we were successful!</i></p>
+<br>
+
