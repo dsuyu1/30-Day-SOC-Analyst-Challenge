@@ -9,3 +9,10 @@ To start, let's go into our Windows server and download Sysmon. First, let's dow
 <br>
 
 We can check Services to verify that Sysmon is running and Event Viewer to start viewing our telemetry.
+
+<p align="center"><img src="https://i.imgur.com/hMTuXYq.png"></p>
+<p align="center"><i>Ref 2: Looking at Event Viewer, we can see that we are generating telemetry!</i></p>
+<br>
+
+## Summary
+A short day today, all I did was install Sysmon using a popular configuration onto our Windows server.
