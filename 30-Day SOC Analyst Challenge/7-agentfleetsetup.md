@@ -20,4 +20,8 @@ Anyways, troubleshooting done with, it's time to start making our Fleet. To begi
 <i>Ref 2: Creating a Fleet within Elastic</i></p>
 <br>
 
-We're prompted for a Fleet name and URL. The URL will be our public IP address.
+We're prompted for a Fleet name and URL. The URL will be our public IP address. After, we're asked to install the fleet server on a centralized host, aka, the Ubuntu server we just spun up specifically for the Fleet. We'll be connecting using PuTTY like last time.
+
+After running the command, the connection between the Fleet server and our centralized host could not be established. This is because our Elastic server (called `elk` wasn't allowing connections from the Fleet server's public IP. This was causing the connection to never be established. In other words, the Fleet server has to be able to access Elasticsearch. I didn't mention it, but previously, I configured the ELK server's firewall to allow connections on port 9200, the port Elasticsearch listens on by default.
+
+
