@@ -4,7 +4,7 @@ The objective for today is to install an Elastic Agent on the Windows server and
 
 Like we've done many times already, I'm going to create a new Ubuntu server on Vultr. This server will be our Fleet server. After creating the server, it's time to pay a visit to our web GUI (our elastic/kibana server) and add the Fleet. 
 
-<p align="center"><img src="https://i.imgur.com/9xpSF53.png">
+<p align="center"><img src="https://i.imgur.com/76TZbJD.png">
 <i>Ref 1: Our servers so far.</i></p>
 <br>
 
