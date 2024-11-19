@@ -23,5 +23,7 @@ In the current version of Sysmon, v15.5, there are **30** different event IDs. H
 - Event ID 10, ProcessAccess
 - Event ID 22: DNSEvent (DNS query)
 
+We can create rules in an `.xml` file to whitelist or exclude some events so that we don't get overwhelmed. SIEMs are also expensive and targeting only what we want is valuable.
+
 On day 9, we'll install Sysmon using a popular configuration. See you there!
 
