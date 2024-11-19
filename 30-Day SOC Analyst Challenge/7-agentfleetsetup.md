@@ -29,3 +29,9 @@ Now, our Fleet server is connected and we can continue enrolling our Elastic Age
 <p align="center"><img src="https://i.imgur.com/nUuMmKy.png">
 <i>Ref 3: Adding an agent and creating an agent policy.</i></p>
 <br>
+
+This policy is for a Windows machine so we'll select Windows when it asks us to select the appropriate platform.
+
+<p align="center"><img src="https://i.imgur.com/eLVQIKY.png">
+<i>Ref 4: Installing the Elastic Agent on our host (Windows Server 2022).</i></p>
+<br>
