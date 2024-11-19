@@ -10,4 +10,4 @@ Fleet provides a web-based UI to add and manage agents and integrations providin
 <i>Ref 1: A Fleet server managing different Elastic Agents.</i></p>
 <br>
 
-If you remember, previously, I mentioned Beats. Beats are more granular in that you can mix and match the different kinds of Beats based on the type of data you want to collect. Selecting which one to use depends on your use case. 
+If you remember, previously, I mentioned Beats. Beats are more granular in that you can mix and match the different kinds of Beats based on the type of data you want to collect. Selecting which one to use depends on your use case. You can click [here](https://www.elastic.co/guide/en/fleet/current/beats-agent-comparison.html#additional-capabilities-beats-and-agent) to learn more about the differences and similarities between Beats and Agents.
