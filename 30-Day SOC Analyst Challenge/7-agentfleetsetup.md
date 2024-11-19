@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a81d43b5-aa48-4de4-aef7-61706e52d7ff)# Day 7: Elastic Agent and Fleet Server Setup
+# Day 7: Elastic Agent and Fleet Server Setup
 ## Steps
 The objective for today is to install an Elastic Agent on the Windows server and enroll the Windows server into a Fleet.
 
