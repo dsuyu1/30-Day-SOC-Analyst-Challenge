@@ -1,7 +1,8 @@
 # Day 13: Installing an Elastic Agent on Ubuntu
-## Steps
+## Objective
 The objective of this section is to install an Elastic Agent onto the Ubuntu server we created in the last section (Day 12). This will grant us the capability to view logs generated in our Elasticsearch instance.
 
+## Steps
 <p align="center"><img src="https://i.imgur.com/9kc4SIT.png"></p>
 <p align="center"><i>Ref 1: Step 1 is to create a new agent policy for our Ubuntu server.</i></p>
 <br>
