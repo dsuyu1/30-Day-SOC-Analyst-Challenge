@@ -1,7 +1,8 @@
 # Day 10: Ingesting Data into Elasticsearch
-## Steps
+## Objective
 The objective for today is to learn how to ingest Sysmon and Windows Defender logs into Elasticsearch.
 
+## Steps
 First, we'll go to our Elastic web GUI and click on the button that says "Add Integrations." From here, we can select all kinds of integrations, but for now, we're only interested in Sysmon and Windows Defender. 
 
 <p align="center"><img src="https://i.imgur.com/wtMFFaB.png"></p>
