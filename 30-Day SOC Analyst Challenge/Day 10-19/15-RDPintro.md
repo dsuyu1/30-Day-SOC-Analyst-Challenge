@@ -3,7 +3,7 @@
 The objective of this section is to learn about RDP, why it is used, how attackers abuse it, and how to find endpoints with exposed RDP.
 
 ### What is RDP?
-Remote Desktop Protocol (RDP) is used for communication between the terminal server and the terminal client. Users can remotely connect to their endpoints without having to physically go to where their endpoints are located. It makes everything more accessiblee and convienent. However, 90%, of randomware breaches involved RDP abuse. 
+Remote Desktop Protocol (RDP) is used for communication between the terminal server and the terminal client. Users can remotely connect to their endpoints without having to physically go to where their endpoints are located. It makes everything more accessible and convenient. However, 90%, of ransomware breaches involved RDP abuse. 
 One of the main ways an attacker can gain unauthrozied access into a network is by an exposed RDP service. Attackers can authenticate using a phished account or brute forcing their way into the server. They can then dump credentials or move laterally within the network.
 
 ### How to find exposed RDP servers
