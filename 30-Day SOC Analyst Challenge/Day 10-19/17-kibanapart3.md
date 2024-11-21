@@ -19,3 +19,7 @@ When it comes to event ID 4624, there are specific logon types we're looking for
 - Logon type 3 `Network`: Network connection.
 - Logon type 7 `Unlock`: The workstation was unlocked.
 - Logon type 10 `RemoteInteractive`: A user logged on to this computer remotely using Terminal Services or Remote Desktop.
+
+<p align="center"><img src="https://i.imgur.com/PwuDEWj.png"></p>
+<p align="center"><i>Ref 2: Our dashboard as of now.</i></p>
+<br>
