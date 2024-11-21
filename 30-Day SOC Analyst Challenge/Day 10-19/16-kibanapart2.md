@@ -11,7 +11,7 @@ Going into the Discover tab, we'll look at events being generated from our Windo
 
 In the reference above, you can observe that we've sorted our table to show `agent.name`, `source.ip`, and `user.name`. Using this query, let's make a new rule by going up to Alerts.
 
-We'll follow the same process as before. Notably, making rules this way is kind of suboptimal. Really, we should be making rules from the dedicated Rules tab. If we scroll down, under "Stack Management," we can find a tab that says "Rules." Here, we can make much more robust and advanced rules. This is what we'll do this time around.
+We'll follow the same process as before. Notably, making rules this way is kind of suboptimal. We should be making rules from the dedicated Rules tab. If we scroll down, under "Stack Management," we can find a tab that says "Rules." Here, we can make much more robust and advanced rules. This is what we'll do this time around.
 
 <p align="center"><img src="https://i.imgur.com/XPWE6n0.png"></p>
 <p align="center"><i>Ref 2: Under the Rules section, we can make more robust and advanced rules.</i></p>
