@@ -28,17 +28,20 @@ Now that we have the query ready, we should save it.
 
 We select the Alerts tab at the top right to create an alert. Under here, our rule has already been filled out since we made a new alert while our query was up. We can change the rule's setting if we want to.
 
-Next, we want to create a dashboard so that we can visualize where the attacks are sourcing from. First, we navigate to Map since I'll be created a heat map of sorts for accepted and failed SSH activity. Under Maps, select the blue button that says Add Layer. Since we want a heatmap, I'll select the Choropleth option. I had some trouble making a data view, but it's important not to overthink things regarding these labs and to just trial and error. After all, the purpose of this challenge is to learn!
+Next, we want to create a dashboard to visualize where the attacks are sourcing from. First, we navigate to Map since I'll be created a heat map of sorts for accepted and failed SSH activity. Under Maps, select the blue button that says Add Layer. Since we want a heatmap, I'll select the Choropleth option. I had some trouble making a data view, but it's important not to overthink things regarding these labs and to just trial and error. After all, the purpose of this challenge is to learn!
 
 
 <p align="center"><img src="https://i.imgur.com/RaObbdi.png"></p>
 <p align="center"><i>Ref 2: A blank map. This is what we start with.</i></p>
 <br>
 
-I made a new data view called SSH Brute Force Activity. We can think of this as where the data is being pulled from. Under the "Join field," we want the country for this map. So, we'll select the field `source.geo.country_iso_code`. And we're done! It's as simple as that. We can go ahead and save this map and add it to a dashboard.
+I made a new data view called SSH Brute Force Activity. It's important to make this data view from the beginning so that we aren't confused later on when we want to make the maps. There's the default data views `logs-*` and `metrics-*`, but these are very general and don't tell us anything specific. We can think of this as where the data is being pulled from. Under the "Join field," we want the country for this map. So, we'll select the field `source.geo.country_iso_code`. And we're done! It's as simple as that. We can go ahead and save this map and add it to a dashboard.
 
 We can rinse and repeat this process for "Accepted" authentication attempts.
 
 <p align="center"><img src="https://i.imgur.com/gGcJIHx.png"></p>
 <p align="center"><i>Ref 3: Our dashboard that monitors SSH activity.</i></p>
 <br>
+
+## Summary
+In this section, I created a new alert and dashboard that hosts maps that visualize where geologically the SSH attempts are coming from.
