@@ -27,6 +27,6 @@ Our attack plan is as follows:
 ### Phase 6: Exfiltration
 - During the exfiltration phase, we'll download the passwords.txt file and exfiltrate that data.
 
-<p align="center"><img src="https://i.imgur.com/HAW643T.png"></p>
+[<p align="center"><img src="https://i.imgur.com/HAW643T.png"></p>](https://www.canva.com/design/DAGXObsWI0c/hP_5RK2TZKIiNYdBpT8Iwg/view?utm_content=DAGXObsWI0c&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 <p align="center"><i>Ref 1: Our attack plan.</i><p>
 <br>
