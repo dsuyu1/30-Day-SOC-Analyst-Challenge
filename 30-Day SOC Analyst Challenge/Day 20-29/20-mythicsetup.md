@@ -15,7 +15,7 @@ After, we can access our Mythic web GUI using our server's IP address using port
 <p align="center"><i>Ref 1: Our Mythic web GUI.</i></p>
 <br>
 
-Honestly, this website looks pretty sketchy haha 😆
+Honestly, this website looks pretty sketchy haha 😆 I'm excited to get started!
 
 ## Summary
-In the next few sections, I'll be using Kali Linux to attack our target machines, generate a payload, and generate our Mythic Agents.
+In the next few sections, I'll be using Kali Linux to attack our target machines, generate a payload, and generate our Mythic Agents. See you then!
