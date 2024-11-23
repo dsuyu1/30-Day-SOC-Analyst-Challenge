@@ -27,7 +27,7 @@ We'll be using Crowbar to perform an RDP brute force attack over to our Windows 
 <p align="center"><i>Ref 3: Crowbar successfully brute-forced the machine.</i></p>
 <br>
 
-Now that we have our credentials, we can RDP from our Kali machine by using `xfreerdp`. Running the command `xfreerdp /u:Administrator /p: [password] /v: 155.138.242.206:3389`, we can RDP into the machine.
+Now that we have our credentials, we can RDP from our Kali machine by using `xfreerdp`. Running the command `xfreerdp /u:Administrator /p:[password] /v:155.138.242.206:3389`, we can RDP into the machine.
 
 <p align="center"><img src="https://i.imgur.com/8iFtNp0.png"></p>
 <p align="center"><i>Ref 4: I've successfully RDP'd into the machine!</i></p>
