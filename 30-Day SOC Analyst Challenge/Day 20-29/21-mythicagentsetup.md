@@ -84,5 +84,6 @@ Notably, there were a few ports we had to open to make this all work out. For ex
 ## Summary
 In this section, I conducted my own brute force attack using Kali Linux and Crowbar, RDP'd into the compromised Windows server, and installed my Mythic agent along with a Mythic server. Using the Mythic server, I was able to run an HTTP server using Python so that I could install the payload from within my Windows server. Once the payload was installed and running, I could use the Mythic web GUI to run commands. I established a command and control connection thanks to the Apollo agent and HTTP C2 profile.
 
+You can read more on C2 profiles [here](https://docs.mythic-c2.net/operational-pieces/c2-profiles).
 
 
