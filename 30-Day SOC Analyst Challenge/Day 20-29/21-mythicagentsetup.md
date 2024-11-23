@@ -16,7 +16,7 @@ We're done with the Windows instance for now. Let's go to our Kali machine and s
 Kali Linux comes with password dictionaries. We can find them using these commands:
 
 <p align="center"><img src="https://i.imgur.com/mFWVBOH.png"></p>
-<p align="center"><i>Ref 2: Preinsalled password dictionaries on Kali.</i></p>
+<p align="center"><i>Ref 2: Preinstalled password dictionaries on Kali.</i></p>
 <br>
 
 We're going to be using `rockyou.txt`. As a proof of concept, I'm going to put my Windows machine's password into this text file. I know it's cheating, but since the purpose of this challenge is to learn how to brute force machines and how such attacks work, this is fine for now. As a note, I'm only going to use the top 50 passwords since the actual file is quite large. I used `head -50 rockyou.txt > /home/dsuyu/dsuyu-wordlist.txt` to save those top 50 (+ my Windows password) into the wordlist we'll use for the attack.
