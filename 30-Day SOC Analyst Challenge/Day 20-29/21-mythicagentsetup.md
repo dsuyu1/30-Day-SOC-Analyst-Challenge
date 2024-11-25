@@ -1,9 +1,9 @@
 # Day 21: Mythic Agent Setup
 ## Objective
-In this section, I will learn how to perform a brute force attack, generate a Mythic agent, and establish C2 (command & control).
+In this section, I will learn how to perform a brute-force attack, generate a Mythic agent, and establish C2 (command and control).
 
 ## Steps
-Firstly, if you can remember, we're going to extract passwords from a file on our Windows server called "passwords.txt." This is for demonstration purposes which is why it's referred to as a "fake" file in the attack diagram. Nonetheless, this will serve as data we will try to exfiltrate from the machine.
+Firstly, if you can remember, we will extract passwords from a file on our Windows server called "passwords.txt." This is for demonstration purposes which is why it's referred to as a "fake" file in the attack diagram. Nonetheless, this will serve as data we will try to exfiltrate from the machine.
 
 This time around, instead of going into the console via Vultr, I'm just going to RDP into the machine. I have no clue why I couldn't figure this out sooner, but here we are! I've learned a lot from this challenge, that's for sure.
 
@@ -73,7 +73,7 @@ Cool! I made a directory called `1` and moved our new executable into there. The
 <p align="center"><i>Ref 10: Downloading the payload onto our Windows server so we can establish a command and control connection.</i></p>
 <br>
 
-In other words, the command downloads the executable from our remote Mythic server. Executing the file means we're now receiving callbacks from our agent to our Mythic server. Effectively, the Windows machine is totally pwned and it's all over from here. Now, using our web GUI, we can run commands such as `ifconfig`, `whoami`, and most importantly, `download`. We're going to download that `passwords.txt` file we made earlier.
+In other words, the command downloads the executable from our remote Mythic server. Executing the file means we're now receiving callbacks from our agent to our Mythic server. Effectively, the Windows machine is pwned and it's all over from here. Now, using our web GUI, we can run commands such as `ifconfig`, `whoami`, and most importantly, `download`. We're going to download that `passwords.txt` file we made earlier.
 
 <p align="center"><img src="https://i.imgur.com/fZKlLww.png"></p>
 <p align="center"><i>Ref 11: Within our C2 profile configuration, I enabled a few commands that we'd be able to run once we started receiving callbacks. Here, I'm running those commands.</i></p>
@@ -82,7 +82,7 @@ In other words, the command downloads the executable from our remote Mythic serv
 Notably, there were a few ports we had to open to make this all work out. For example, we had to open port 80 on our Mythic server so that the two servers could actually communicate over HTTP. I also allowed port 9999 on our Mythic server. Like before, we have to make firewall rules not only for the Vultr firewalls but also for our server firewalls.
 
 ## Summary
-In this section, I conducted my own brute force attack using Kali Linux and Crowbar, RDP'd into the compromised Windows server, and installed my Mythic agent along with a Mythic server. Using the Mythic server, I was able to run an HTTP server using Python so that I could install the payload from within my Windows server. Once the payload was installed and running, I could use the Mythic web GUI to run commands. I established a command and control connection thanks to the Apollo agent and HTTP C2 profile.
+In this section, I conducted my own brute force attack using Kali Linux and Crowbar, RDP'd into the compromised Windows server and installed my Mythic agent along with a Mythic server. Using the Mythic server, I was able to run an HTTP server using Python so that I could install the payload from within my Windows server. Once the payload was installed and running, I could use the Mythic web GUI to run commands. I established a command and control connection thanks to the Apollo agent and HTTP C2 profile.
 
 You can read more on C2 profiles [here](https://docs.mythic-c2.net/operational-pieces/c2-profiles).
 
