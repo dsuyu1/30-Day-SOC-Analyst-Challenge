@@ -3,7 +3,7 @@
 In this section, I will learn how to perform a brute-force attack, generate a Mythic agent, and establish C2 (command and control).
 
 ## Steps
-Firstly, if you can remember, we will extract passwords from a file on our Windows server called "passwords.txt." This is for demonstration purposes which is why it's referred to as a "fake" file in the attack diagram. Nonetheless, this will serve as data we will try to exfiltrate from the machine.
+Firstly, if you remember, we will extract passwords from a file on our Windows server called "passwords.txt." This is for demonstration purposes which is why it's referred to as a "fake" file in the attack diagram. Nonetheless, this will serve as data we will try to exfiltrate from the machine.
 
 This time around, instead of going into the console via Vultr, I'm just going to RDP into the machine. I have no clue why I couldn't figure this out sooner, but here we are! I've learned a lot from this challenge, that's for sure.
 
@@ -19,7 +19,7 @@ Kali Linux comes with password dictionaries. We can find them using these comman
 <p align="center"><i>Ref 2: Preinstalled password dictionaries on Kali.</i></p>
 <br>
 
-We're going to be using `rockyou.txt`. As a proof of concept, I'm going to put my Windows machine's password into this text file. I know it's cheating, but since the purpose of this challenge is to learn how to brute force machines and how such attacks work, this is fine for now. As a note, I'm only going to use the top 50 passwords since the actual file is quite large. I used `head -50 rockyou.txt > /home/dsuyu/dsuyu-wordlist.txt` to save those top 50 (+ my Windows password) into the wordlist we'll use for the attack.
+We're going to be using `rockyou.txt`. As a proof of concept, I will put my Windows machine's password into this text file. I know it's cheating, but since the purpose of this challenge is to learn how to brute force machines and how such attacks work, this is fine for now. As a note, I will only use the top 50 passwords since the actual file is quite large. I used `head -50 rockyou.txt > /home/dsuyu/dsuyu-wordlist.txt` to save those top 50 (+ my Windows password) into the wordlist we'll use for the attack.
 
 We'll be using Crowbar to perform an RDP brute force attack over to our Windows machine. To do this, I used the `crowbar -b rdp -u Administrator -C dsuyu-wordlist.txt -s 155.138.242.206/32` command. `-b` specifies the RDP service, `-u` is the user account, `-C` is the source of our passwords that we want to try to authenticate with, and `-s` specifies the specific IP address I want to use. `/32` means we're only interested in this specific IP address. I won't show the password for now, since somebody seeing the password while I'm still trying to complete the challenge would be problematic, to say the least.
 
