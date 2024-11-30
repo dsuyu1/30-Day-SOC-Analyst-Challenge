@@ -17,7 +17,7 @@ I follow Steven from [MyDFIR](https://www.youtube.com/@MyDFIR) on the 30-Day SOC
 - Create alerts and dashboards 
 
 ### Week 3:
-- Introduction to command and control
+- Introduction to command and control (C2)
 - How to set up our own C2 server (Mythic)
 - Attack our public servers
 
