@@ -8,3 +8,13 @@ If you remember, last section, I performed a brute force attack and established 
 <p align="center"><img src="https://i.imgur.com/4Q4R4dt.png"></p>
 <p align="center"><i>Ref 1: Searching for the process creations of the payload that let us establish a C2 session.</i></p>
 <br>
+
+With the query `event.code: 1 and (winlog.event_data.Hashes: *FF65AE48B9572FE896BC6656FD0921E5E1A89C7D932446F02F0C62DA14D26343* or winlog.event_data.OriginalFileName: "Apollo.exe")`, I'm going to make a new rule.
+
+<p align="center"><img src="https://i.imgur.com/Wr7Haf1.png"></p>
+<p align="center"><i>Ref 2: Setting the rule's required fields.</i></p>
+<br>
+
+<p align="center"><img src="https://i.imgur.com/7rkXYyz.png"></p>
+<p align="center"><i>Ref 3: Our rule has been created.</i></p>
+<br>
