@@ -19,4 +19,4 @@ With the query `event.code: 1 and (winlog.event_data.Hashes: *FF65AE48B9572FE896
 <p align="center"><i>Ref 3: Our rule has been created.</i></p>
 <br>
 
-This query: `event.code: 1 and event.provider: "Microsoft-Windows-Sysmon"` finds event creations that Sysmon picked up on and sent over to us. 
+This query: `event.code: 1 and event.provider: "Microsoft-Windows-Sysmon"` finds event creations that Sysmon picked up on and sent over to us.  
