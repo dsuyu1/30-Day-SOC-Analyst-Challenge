@@ -26,3 +26,5 @@ After making the rule, we can start making our dashboard to help us visualize th
 <p align="center"><img src="https://i.imgur.com/kVbpCc9.png"></p>
 <p align="center"><i>Ref 4: Our first table has been created. It focuses on process creations (event ID 1).</i></p>
 <br>
+
+This table looks at process creations, but we also want to look at exterbak network connections as well. To do this, I'll use this query: `event.code: 3 and event.provider: "Microsoft-Windows-Sysmon" and winlog.event_data.Initiated: "true" `.
