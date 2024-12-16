@@ -20,3 +20,9 @@ With the query `event.code: 1 and (winlog.event_data.Hashes: *FF65AE48B9572FE896
 <br>
 
 This query: `event.code: 1 and event.provider: "Microsoft-Windows-Sysmon"` finds event creations that Sysmon picked up on and sent over to us.  
+
+After making the rule, we can start making our dashboard to help us visualize the rule we just created. 
+
+<p align="center"><img src="https://i.imgur.com/kVbpCc9.png"></p>
+<p align="center"><i>Ref 4: Our first table has been created. It focuses on process creations (event ID 1).</i></p>
+<br>
