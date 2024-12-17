@@ -23,6 +23,21 @@ We'll also create an endpoint firewall rule.
 <p align="center"><i>Ref 2: Our new firewall rule.</i></p>
 <br>
 
-Once that's all set up, we can start installing osTicket by navigating to the webiste and downloaded the correct version.
+Once that's all set up, we can start installing osTicket by navigating to the webiste and downloaded the correct version. Once extracted, I'll create a new directory within the `C:\xampp\htdocs` file path called `osTicket`. I'll paste the extracted files here.
 
+<p align="center"><img src="https://i.imgur.com/VN6Csb3.png"></p>
+<p align="center"><i>Ref 3: Created a new directory to host my osTicket files.</i></p>
+<br>
 
+Heading to `[ip]/osticket/upload` in our web browser, we are greeted with a page where we can start configuring our osTicket web server.
+
+Before installing osTicket, we need to create a database via the phpMyAdmin control panel. I'll name this database `dsuyu-30-Day`. Once created, we can head back to the set up page for osTicket. Once created, we only have to run `icacls \ost-config.php /reset` in Powershell to change permissions. 
+
+<p align="center"><img src="https://i.imgur.com/RE9V9DF.png"></p>
+<p align="center"><i>Ref 4: We've successfully installed osTicket.</i></p>
+<br>
+
+Once installed, clients can now access the client page to submit tickets and we as agents can log in via the staff control panel. 
+
+## Summary
+In this section, I created an osTicket web server for clients to submit tickets and for agents (me) to review them. 
