@@ -19,7 +19,7 @@ With the query `event.code: 1 and (winlog.event_data.Hashes: *FF65AE48B9572FE896
 <p align="center"><i>Ref 3: Our rule has been created.</i></p>
 <br>
 
-This query: `event.code: 1 and event.provider: "Microsoft-Windows-Sysmon"` finds event creations that Sysmon picked up on and sent over to us.  
+This query: `event.code: 1 and event.provider:  "Microsoft-Windows-Sysmon"  and (powershell or cmd or rundll32)` finds event creations that Sysmon picked up on and sent over to us.  
 
 After making the rule, we can start making our dashboard to help us visualize the rule we just created. 
 
@@ -27,4 +27,15 @@ After making the rule, we can start making our dashboard to help us visualize th
 <p align="center"><i>Ref 4: Our first table has been created. It focuses on process creations (event ID 1).</i></p>
 <br>
 
-This table looks at process creations, but we also want to look at exterbak network connections as well. To do this, I'll use this query: `event.code: 3 and event.provider: "Microsoft-Windows-Sysmon" and winlog.event_data.Initiated: "true" `.
+This table looks at process creations, but we also want to look at exterbak network connections as well. To do this, I'll use this query: `event.code: 3 and event.provider: "Microsoft-Windows-Sysmon" and winlog.event_data.Initiated: "true" and not winlog.event_data.Image: *MsMpEng.exe`.
+
+To filter for Microsoft Defender deactivations, I'll use this query: `event.code: 5001 and event.provider : "Microsoft-Windows-Windows Defender"`.
+
+With these three queries, I can make my fully fleshed-out dashboard.
+
+<p align="center"><img src="https://i.imgur.com/9mnEA7i.png"></p>
+<p align="center"><i>Ref 5: Our three tables have been added to our dashboard.</i></p>
+<br>
+
+## Summary
+In this section, I created three alerts and three dashboards for process creations, intiated network connections, and Microsoft Defender deactivations.
