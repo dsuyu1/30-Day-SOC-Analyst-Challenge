@@ -23,6 +23,6 @@ We'll also create an endpoint firewall rule.
 <p align="center"><i>Ref 2: Our new firewall rule.</i></p>
 <br>
 
-
+Once that's all set up, we can start installing osTicket by navigating to the webiste and downloaded the correct version.
 
 
